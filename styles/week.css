@@ -1,0 +1,38 @@
+.week {
+    display: flex;
+    width: 100%;
+}   
+
+.week .day {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+.week .day .item{
+    display: flex;
+    width: 100%;
+    height: calc(100vh/10);
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.15)
+}
+
+.week .day:nth-child(1) .item,
+.week .day .item:nth-child(1){
+    background-color: var(--white);   
+}
+
+.week .day .item:nth-child(1){
+    color: rgba(0, 0, 0, 1)
+}
+
+.week .day .item{
+    color: rgba(0, 0, 0, 0.50)
+}
+
+.week .day .item.available{
+    background-color: var(--light-blue);
+
+}
